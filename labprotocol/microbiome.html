@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTGAA Lab: Bio Production</title>
+  <link rel="stylesheet" href="github-markdown.css">
+  <style>
+    body {
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+    
+    .tab-container {
+      margin-top: 20px;
+    }
+    
+    .tab {
+      overflow: hidden;
+      background-color: #f1f1f1;
+      margin-bottom: 10px;
+    }
+    
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .tab button:hover {
+      background-color: #ddd;
+    }
+    
+    .tab button.active {
+      background-color: #ccc;
+    }
+    
+    .tabcontent {
+      display: none;
+      padding: 20px;
+      background-color: white;
+    }
+    .markdown-body .custom-paragraph {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .markdown-body .custom-paragraph span {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  
+    <article class="markdown-body">
+   
+<h2><a href="http://fab.cba.mit.edu/classes/S66.19/S66.19"> HTGAA :</a> Engineering the Gut Microbiome </h2>
+<p class="custom-paragraph">
+      <span><strong>Offered in <a href="http://fab.cba.mit.edu/classes/S66.19/S66.19">2019</a> , <i>Updated 05/30/2023</i></strong></span> <strong> David Sun Kong (MIT Media Lab) and Vijay Yajnik </strong>
+      
+    </p>
+  
+    <hr>
+    <div class="tab-container">
+      <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Assignment')">Assignment</button>
+        <button class="tablinks" onclick="openTab(event, 'ExampleLab')">Example Lab</button>
+        <button class="tablinks" onclick="openTab(event, 'DiscussionQuestions')">Discussion Questions</button>
+        <button class="tablinks" onclick="openTab(event, 'UsefulResources')">Useful Resources</button>
+        <button class="tablinks" onclick="openTab(event, 'AutomationCode')">New! Automation Code</button>
+      </div>
+      
+      <div id="Assignment" class="tabcontent">
+        <h3>Pre-reading</h3>
+        <p> The human gut microbiota is one of the most densely populated ecosystems of microorganisms on earth. With an estimated 100 trillion microorganisms, the gut is an extraordinarily complex system of microbe-microbe and microbe-host interactions. A growing body of research is beginning to elucidate the diverse impacts the gut microbiota plays in human health and development, from nutrition, to disease, and even cognition. Recently, with the success of fecal matter transplants (FMTs) to treat infectious disease, microbes are emerging as a unique therapeutic. Model systems to both prototype and study complex polymicrobial systems are a necessity for producing robust microbial communities that can be engineered at both the genetic level (subcellular) and population level (multicellular). </p>
+
+
+        <h3>Wet Lab Assignments</h3>
+        <p>
+        <li> Isolate a colony from your skin and mouth and identify them.</li>
+        </p>
+        <p>
+        <li> Make a tape based microfluidic device to confine bacteria and image them using a microscope. </li>
+        </p>
+        <p> <i>
+        <li> Extra credit: make your own fluidic device, via tape, 3D printing, or another method, and upload to www.metafluidics.org.</li>
+        </i> </p>
+        <br>
+
+      </div>
+      
+      <div id="ExampleLab" class="tabcontent">
+        <h3>Example Lab</h3>
+        
+     
+<p>Isolate a colony from your skin and mouth and identify them.</p>
+
+<ol>
+   <li>
+       Place your palm on the LB+Agar plate or use cotton swabs to transfer your skin and oral microbiome to streak LB plates: one plate with your skin microbiome and one plate with oral microbiome.
+   </li>
+   <li>
+       Write your name, date and body part from which the microbes are taken from.
+   </li>  
+   <li>
+       Incubate the plates overnight at 37°C.
+   </li>
+   <li>
+       Pick the colonies that you would like to sequence, isolate the colony and restreak them on a new LB+agar plate the following day. Write your name, date and body part from which the microbes are taken from. 
+   </li>
+   <li>
+       Incubate the plates overnight at 37°C. Send them to <a href="https://www.genewiz.com">Genewiz</a> for <a href="https://www.youtube.com/watch?v=3UHiveJ1jzM&t=199s">16s rrna sequencing</a>.
+   </li>
+   <li>
+       Once the sequencing results are out blast them using <a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastSearch&BLAST_SPEC=TargLociBlast">Blast</a> to find the closest match.
+   </li>
+</ol>
+
+
+<p>Make a tape based microfluidic device to confine bacteria and image them using a microscope.</p>
+<br>
+<img src="images/Concept_tapemicrofludics.png">  
+<br>
+<a href="http://measurebiology.org/wiki/Assignment_8,_Part_1:_fabricate_a_microfluidic_device#cite_note-1">Image source</a>
+
+<ol>
+   <li>
+       Take one of the petridishes with cured PDMS and laser-cut double sided tape [<a href="http://adhesiveapps.com/wp-content/uploads/2018/10/S8512-2DPDL.pdf">Tape</a>]. Here is one of the lasercut tape. </li>
+      <br>
+      <img src="images/lasercutTape.jpg" class="center">
+<br>
+   <li>
+       Use a pen knife to cut a slab of PDMS of the size of laser-cut tape.
+   </li>  
+   <li>
+       Use tweezers to peel off one side of the tape and adhere the exposed side to the PDMS slab. Press hard enough to make sure the tape surface is flat. Remove excess tape if there is any.
+   </li>
+   <li>
+       Make holes through the PDMS by punching the inlets and outlet of the lasercut tape using a biopsy puncher. </li>
+   <li>
+       Make sure the hole is not clogged with any debris of PDMS.</li>
+   <li>Peel off the other side of the tape and adhere it to the coverslip or glass slide. 
+       </li>
+       <br>
+    <img src="images/tapemicrofludicdevice.jpg" class="center">
+<br>
+   <li>Cut three lengths of tubing  at an angle (arbitrary) and length of 5cm-10cm each. Insert the tubing using tweezers in the inlets and outlet.  
+       </li>
+       <li>Place the device under a microscope, use a double sided tape to lock it in a place and adjust your magnification (40x objective or 60x objective) to see the microchannel. Use two syringes to inject cell culture into the inlet tubing. 
+       </li>
+       <li>Use your camera to take pictures.</li>
+</ol>
+     
+     
+        </div>
+      
+      <div id="DiscussionQuestions" class="tabcontent">
+        <h3>Homework Questions</h3>
+<p>
+<li>1. For four types of interventions in the gut microbiome, (i) probiotics; (ii) fecal matter transplant; (iii)… (iv), describe what are the advantages or disadvantages of each approach.</li>
+</p>
+<p>
+<li>2. One future application of engineering the gut microbiome is human augmentation. Because the microbiome has been shown to have an impact on so many aspects of human health and development, (i) propose a type of human augmentation (e.g., extended alertness for sustained periods of time, reduced stress) and (ii) describe how a microbial intervention might produce that augmentation.</li>
+</p>
+<br>
+
+
+      </div>
+      
+      <div id="UsefulResources" class="tabcontent">
+
+<h3>Acknowledgememts</h3>
+<p>
+<li> We thank Paul Blainey and Julie L. Sutton on providing useful information and resources for microfludics part of the assignment.</li>
+</p>
+
+
+<h3>Useful Resources</h3>
+
+<ul>
+    <li> 
+        Readings on Microbiome
+        <ul>
+        <li>
+            <a href="http://www.nytimes.com/2013/05/19/magazine/say-hello-to-the-100-trillion-bacteria-that-make-up-your-microbiome.html?_r=0">'Some of My Best Friends Are Germs,' by Michael Pollan, NYTimes</a>
+        </li>
+        <li>
+            <a href="http://stm.sciencemag.org/content/4/137/137rv5.full-text.pdf+html">'Microbiota-Targeted Therapies: An Ecological Perspective' by Katherine P. Lemon, Gary C. Armitage, David A. Relman, and Michael A. Fischbach</a>
+        </li>
+
+        </ul>
+    </li>
+     <li> 
+        Microfluidics
+        <ul>
+        <li>
+            <a href="https://www.nature.com/articles/nbt.3873">Open-source, community-driven microfluidics with metafluidics</a>
+        </li>
+        <li>
+            <a href="http://www.metafluidics.org">Metafluidics</a>
+        </li>
+        <li>
+            <a href="http://pubs.rsc.org/en/content/articlehtml/2012/lc/c2lc40074j">'Human gut-on-a-chip inhabited by microbial flora that experiences intestinal peristalsis-like motions and flow' by Hyun Jung Kim, Dongeun Huh, Geraldine Hamilton and Donald E. Ingber</a>
+        </li>
+        </ul>
+    </li>
+    <li> 
+       Genetics of IBD       
+        <ul>
+            <li>
+                Jostins et al Host Microbiome have shaped the genetic architecture of Inflammatory Bowel Disease. Nature 491:119-24 2012
+            </li>
+        </ul>
+    </li>
+         
+    <li> 
+        Microbiome therapeutics in IBD        
+        <ul>
+            <li>Cohen et al. Genetic Factors and the Intestinal Microbiome Guide Development of Microbe Based Therapies for Inflammatory Bowel Diseases. Gastroenterology in press (accepted March 2, 2019)
+                 </li>
+            <li>Somineni and Kugathasan The Microbiome in Patients with Inflammatory Diseases. Clinical Gastroenterology and Hepatology 17:23-255, 2019
+                  </li>
+        </ul>
+    </li>  
+    
+        <li> 
+        Healthy microbiome - Human Microbiome Project (HMP)        
+        <ul>
+            <li>Human Microbiome Consortium: Structure, Function and Diversity of the Healthy Microbiome Nature 486:207-14
+               </li>
+            <li>Human Microbiome Consortium: A Framework for Human Microbiome Research Nature 486:215-12
+                  </li>
+            <li>Glibert et al, Current Understanding of the human microbiome. Nature Medicine 24:392-400, 2018
+                  </li>
+        </ul>
+    </li>  
+    
+    <li> 
+        Commensal Transmission and FMT      
+        <ul>
+            <li>Browne et al. Transmission of gut microbiota: spreading of health. Nature Reviews Microbiology 9:531-543, 2017 </li>
+            <li>Effect of fecal microbiota transplantation on 8-week remission in patients with Ulcerative Colitis: A Randomized Clinical Trial JAMA 321:156-164, 2109  </li>
+            <li>Krajicek et al. Nuts and Bolts of Fecal Microbiota Transplantation Clin Gastro Hepatol 17:345-352, 2019
+                  </li>
+        </ul>
+    </li>  
+
+<li> 
+       Dysbiosis and diseases       
+        <ul>
+            <li>Frank et al Molecular-Phylogenetic characterization of Microbial Community imbalances in human inflammatory Bowel Diseases Proc Natl Acad Sci USA 104:13780-5, 2007 </li>
+            <li>Yilmaz et al. Microbial Network Disturbances in relapsing refractory Crohn’s Disease. Nature Medicine March 7, 2019 Epub ahead of print  </li>
+        </ul>
+    </li>  
+    <li> 
+       Host Microbe interactions        
+        <ul>
+            <li>Dorrestein et al Finding the missing links among Metabolites, Microbes and the Host. Immunity 40:824-832, 2014 <li>Yilmaz et al. Microbial Network Disturbances in relapsing refractory Crohn’s Disease. Nature Medicine March 7, 2019 Epub ahead of print  </li>
+            <li>Blander et al Regulation of Inflammation by Microbiota interactions with the Host. Nature Immunology 18:851-860, 2017</li>    
+        </ul>
+    </li>  
+        Readings on Microbiome
+        <ul>
+        <li>
+            <a href="https://www.jove.com/video/55923/a-simple-robust-high-throughput-single-molecule-flow-stretching-assay">A Simple, Robust, and High Throughput Single Molecule Flow Stretching Assay Implementation for Studying Transport of Molecules Along DNA</a>
+        </li>
+        <li>
+            <a href="http://measurebiology.org/wiki/Assignment_8,_Part_1:_fabricate_a_microfluidic_device#cite_note-1">'Fabricate a microfluidic device'</a>
+        </li>
+       
+        </ul>
+    </li> 
+
+    
+</ul>
+      </div>
+      <div id="AutomationCode" class="tabcontent">
+        <h3>Opentrons Script</h3>
+        <p>To be added</p>
+      </div>
+    </div>
+  </article>
+  
+  <script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
+</body>
+</html>

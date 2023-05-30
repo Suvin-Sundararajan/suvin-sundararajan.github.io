@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTGAA Lab: Bio Production</title>
+  <link rel="stylesheet" href="github-markdown.css">
+  <style>
+    body {
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+    
+    .tab-container {
+      margin-top: 20px;
+    }
+    
+    .tab {
+      overflow: hidden;
+      background-color: #f1f1f1;
+      margin-bottom: 10px;
+    }
+    
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .tab button:hover {
+      background-color: #ddd;
+    }
+    
+    .tab button.active {
+      background-color: #ccc;
+    }
+    
+    .tabcontent {
+      display: none;
+      padding: 20px;
+      background-color: white;
+    }
+    .markdown-body .custom-paragraph {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .markdown-body .custom-paragraph span {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  
+    <article class="markdown-body">
+    <h2><a href="http://fab.cba.mit.edu/classes/S66.19/S66.19">HTGAA :</a> Synthetic Minimal Cells</h2>
+    <p class="custom-paragraph">
+      <span><strong>Offered in <a href="http://fab.cba.mit.edu/classes/S66.19/S66.19">2019</a> , <i>Updated 05/30/2023</i></strong></span> <strong> Kate Adamala (University of Minnesota)  </strong>
+      
+    </p>
+  
+    <hr>
+    <div class="tab-container">
+      <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Assignment')">Overview</button>
+        <button class="tablinks" onclick="openTab(event, 'Prep')">Pre Lab Prep</button>
+        <button class="tablinks" onclick="openTab(event, 'ExampleLab')">Example Lab</button>
+        <button class="tablinks" onclick="openTab(event, 'DiscussionQuestions')">Discussion Questions</button>
+        <button class="tablinks" onclick="openTab(event, 'UsefulResources')">Useful Resources</button>
+        <button class="tablinks" onclick="openTab(event, 'AutomationCode')">New! Automation Code</button>
+      </div>
+      
+      <div id="Assignment" class="tabcontent">
+       
+<p><strong><span style="background-color:#FFFF00;">EXPERIMENTAL ASSINGMENT </span></strong></p>
+
+<p>In this exercise you will use some light pipetting skills, you will prove you can work in RNAse free environment, and you will do simple reaction setup calculations. You will also need to look up few simple biochemical values in the literature.</p>
+
+<p>You will perform experiments that will result in direct visualization of the translation processes &ndash; observing the protein product as it&rsquo;s being formed. <strong>You will set up one of two cell-free protein synthesis reactions: synthesis of GFP or FIAsH protein.</strong></p>
+
+<p>GFP is green fluorescent protein &ndash; you can go learn more on Wikipedia. Mature GFP is fluorescent on it&rsquo;s own &ndash; the fluorophore is made of amino acids from the GFP protein itself.</p>
+
+<p>FIAsH is a very short protein, not fluorescent on its own. The fluorescence comes from the ligand, a small molecule that&rsquo;s bound to the FIAsH peptide. The ligand&rsquo;s full name is fluorescein arsenical helix binder bis-EDT adduct, FIAsH-EDT2.</p>
+<p><img src="images/flashligand.jpg"></p>
+
+
+<p>Set up few GFP reactions and few FLAsH reactions, depending on how many people there is in class and how would you like to split into groups.</p>
+
+<p>&nbsp;</p>
+
+      
+      
+      </div>
+
+      <div id="Prep" class="tabcontent">
+        
+        
+<p><u><strong>1. Math before pipetting.</strong></u></p>
+
+<p>Calculate final volumes and concentrations of your expression reaction, using the table below.</p>
+
+<p>Each final reaction volume will be 15uL total.</p>
+
+<p>You will mix all components of the translation system. For GFP reaction, you will mix everything in the table below EXCEPT FIAsH ligand and MES. You will use those two only for the FIAsH reactions.</p>
+
+<table border="0" cellpadding="0" cellspacing="0" style="width:591px;" width="0">
+	<tbody>
+		<tr>
+			<td nowrap="nowrap" style="width:210px;height:19px;">
+			<p align="left"><strong>Reagent</strong></p>
+			</td>
+			<td nowrap="nowrap" style="width:81px;height:19px;">
+			<p align="left"><strong>stock</strong></p>
+			</td>
+			<td style="width:81px;height:19px;">
+			<p align="left"><strong>final</strong></p>
+			</td>
+			<td style="width:110px;height:19px;">
+			<p align="left"><strong>uL to use in one 20uL reaction</strong></p>
+			</td>
+			<td style="width:109px;height:19px;">
+			<p align="left"><strong>function</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td nowrap="nowrap" style="width:210px;height:19px;">
+			<p align="left"><strong>water to total</strong></p>
+			</td>
+			<td nowrap="nowrap" style="height:19px;">&nbsp;</td>
+			<td style="height:19px;">
+			<p align="left">&nbsp;</p>
+			</td>
+			<td style="width:110px;height:19px;">
+			<p align="left">&nbsp;</p>
+			</td>
+			<td style="width:109px;height:19px;">
+			<p align="left">Solvent</p>
+			</td>
+		</tr>
+		<tr>
+			<td nowrap="nowrap" style="width:210px;height:19px;">
+			<p align="left"><strong>Mg-glutamate (mM)</strong></p>
+			</td>
+			<td nowrap="nowrap" style="height:19px;">
+			<p align="right">1000mM</p>
+			</td>
+			<td style="height:19px;">
+			<p align="right">12mM</p>
+			</td>
+			<td style="width:110px;height:19px;">
+			<p align="right">&nbsp;</p>
+			</td>
+			<td style="width:109px;height:19px;">
+			<p align="left">salt</p>
+			</td>
+		</tr>
+		<tr>
+			<td nowrap="nowrap" style="width:210px;height:19px;">
+			<p align="left"><strong>K-glutamate (mM)</strong></p>
+			</td>
+			<td nowrap="nowrap" style="height:19px;">
+			<p align="right">3000mM</p>
+			</td>
+			<td style="height:19px;">
+			<p align="right">140mM</p>
+			</td>
+			<td style="width:110px;height:19px;">
+			<p align="right">&nbsp;</p>
+			</td>
+			<td style="width:109px;height:19px;">
+			<p align="left">salt</p>
+			</td>
+		</tr>
+		<tr>
+			<td nowrap="nowrap" style="width:210px;height:19px;">
+			<p align="left"><strong>DTT (mM)</strong></p>
+			</td>
+			<td nowrap="nowrap" style="height:19px;">
+			<p align="right">100mM</p>
+			</td>
+			<td style="height:19px;">
+			<p align="right">1mM</p>
+			</td>
+			<td style="width:110px;height:19px;">
+			<p align="right">&nbsp;</p>
+			</td>
+			<td style="width:109px;height:19px;">
+			<p align="left">reducing agent</p>
+			</td>
+		</tr>
+		<tr>
+			<td nowrap="nowrap" style="width:210px;height:19px;">
+			<p align="left"><strong>energy mix</strong></p>
+			</td>
+			<td nowrap="nowrap" style="height:19px;">
+			<p align="right">10x</p>
+			</td>
+			<td style="height:19px;">
+			<p align="right">1x</p>
+			</td>
+			<td style="width:110px;height:19px;">
+			<p align="right">&nbsp;</p>
+			</td>
+			<td style="width:109px;height:19px;">
+			<p align="left">translation juice*</p>
+			</td>
+		</tr>
+		<tr>
+			<td nowrap="nowrap" style="width:210px;height:19px;">
+			<p align="left"><strong>amino acids </strong></p>
+			</td>
+			<td nowrap="nowrap" style="height:19px;">
+			<p align="right">20mM</p>
+			</td>
+			<td style="height:19px;">
+			<p align="right">2mM</p>
+			</td>
+			<td style="width:110px;height:19px;">
+			<p align="right">&nbsp;</p>
+			</td>
+			<td style="width:109px;height:19px;">
+			<p align="left">&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td nowrap="nowrap" style="width:210px;height:19px;">
+			<p align="left"><strong>RNAse inhibitor&nbsp; Murine 40U/ul</strong></p>
+			</td>
+			<td nowrap="nowrap" style="height:19px;">
+			<p align="right">50x</p>
+			</td>
+			<td style="height:19px;">
+			<p align="right">1x</p>
+			</td>
+			<td style="width:110px;height:19px;">
+			<p align="right">&nbsp;</p>
+			</td>
+			<td style="width:109px;height:19px;">
+			<p align="left">&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td nowrap="nowrap" style="width:210px;height:19px;">
+			<p align="left"><strong>T7 RNAP </strong></p>
+			</td>
+			<td nowrap="nowrap" style="height:19px;">
+			<p align="right">100uM</p>
+			</td>
+			<td style="height:19px;">
+			<p align="right">1.5uM</p>
+			</td>
+			<td style="width:110px;height:19px;">
+			<p align="right">&nbsp;</p>
+			</td>
+			<td style="width:109px;height:19px;">
+			<p align="left">RNA polymerase</p>
+			</td>
+		</tr>
+		<tr>
+			<td nowrap="nowrap" style="width:210px;height:19px;">
+			<p align="left"><strong>Cell Free Prep</strong></p>
+			</td>
+			<td nowrap="nowrap" style="height:19px;">
+			<p align="right">3x</p>
+			</td>
+			<td style="height:19px;">
+			<p align="right">1x</p>
+			</td>
+			<td style="width:110px;height:19px;">
+			<p align="right">&nbsp;</p>
+			</td>
+			<td style="width:109px;height:19px;">
+			<p align="left">ribosomes</p>
+			</td>
+		</tr>
+		<tr>
+			<td nowrap="nowrap" style="width:210px;height:19px;">
+			<p align="left"><strong>Plasmid </strong></p>
+			</td>
+			<td nowrap="nowrap" style="height:19px;">
+			<p align="right">&nbsp;</p>
+			</td>
+			<td style="height:19px;">
+			<p align="right">10nM</p>
+			</td>
+			<td style="width:110px;height:19px;">
+			<p align="right">&nbsp;</p>
+			</td>
+			<td style="width:109px;height:19px;">
+			<p align="left">your gene here</p>
+			</td>
+		</tr>
+		<tr>
+			<td nowrap="nowrap" style="width:210px;height:19px;">
+			<p align="left"><strong>FIAsH ligand (if needed)</strong></p>
+			</td>
+			<td nowrap="nowrap" style="height:19px;">
+			<p align="right">1mM</p>
+			</td>
+			<td style="height:19px;">
+			<p align="right">5uM</p>
+			</td>
+			<td style="width:110px;height:19px;">
+			<p align="right">&nbsp;</p>
+			</td>
+			<td style="width:109px;height:19px;">
+			<p align="left">&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td nowrap="nowrap" style="width:210px;height:19px;">
+			<p align="left"><strong>MES</strong></p>
+			</td>
+			<td nowrap="nowrap" style="height:19px;">
+			<p align="right">1M</p>
+			</td>
+			<td style="height:19px;">
+			<p align="right">20mM</p>
+			</td>
+			<td style="width:110px;height:19px;">
+			<p align="right">&nbsp;</p>
+			</td>
+			<td style="width:109px;height:19px;">
+			<p align="left">buffer for FLAsH ligand only</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p align="left">&nbsp;</p>
+
+<p align="left"><strong>*&rdquo;energy mix&rdquo;</strong> is name for a solution of:</p>
+
+<p>15mM ATP and GTP</p>
+
+<p>9mM CTP and UTP</p>
+
+<p>0.68 mM folinic acid</p>
+
+<p>2 mg/mL of E. coli tRNA mixture</p>
+
+<p>3.3 mM nicotinamide adenine dinucleotide (NAD)</p>
+
+<p>2.6 mM coenzyme-A (CoA);</p>
+
+<p>15 mM spermidine</p>
+
+<p>40 mM sodium oxalate</p>
+
+<p>7.5mM cAMP</p>
+
+<p>300mM 3-PGA (energy)</p>
+
+<p>500mM HEPES pH 8</p>
+
+<p>Bonus knowledge: do you understand why each of those components is needed?</p>
+
+<p align="left">&nbsp;</p>
+
+<p align="left"><strong>Plasmid concentration calculations:</strong></p>
+<p>You need to convert typical plasmid stock concentration given as weigh/volume into molar concentration for both plasmids.</p>
+<p>GFP plasmid- 352 ng/ul, tips: see <a href="images/GFPplasmid-sequence.pdf">plasmid map</a>, how big is the plasmid? what&rsquo;s the MW?</p>
+
+<p>FlAsH peptide plasmid- 212 ng/ul, see <a href="images/FIAsHplasmid.pdf">plasmid map</a> </p>
+
+<p>&nbsp;</p>
+
+<p>For FlAsH peptide expression, the txtl reaction should be mixed with the FlAsH ligand FIAsH-EDT2 (stock concentration of 1mM) and the MES buffer (stock of 1M) to final concentrations of 5uM and 20mM, respectively.</p>
+
+<p><strong>Q</strong>: how much of the ligand and MES buffer do you need to add to the final TxTl reaction, from those stock solutions? (you will replace some of the water in the txtl setup below)</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Other setup math:</strong></p>
+
+<p>For fluorescence detection: what wavelength are you going to use to detect eGFP? FIAsH can be detected using the same filtersets.</p>
+
+<p>&nbsp;</p>
+
+<p><u><strong>2. Math in general, and information search.</strong></u></p>
+
+<p>You will need the following info:</p>
+
+<p>- Compare size difference of FIAsH peptide vs GFP peptide. (obvious tip: peptide size, NOT plasmid size)</p>
+
+<p>- What is typical transcription rate in E. coli? (in nucleobases per second) and what is typical translation rate? (in aa/s)</p>
+
+<p>- What is the quantum yield of eGFP? (the variant of GFP you&rsquo;re using is optimized for cell-free expression, but as approximation you can use cellular eGFP value you will find).</p>
+
+<p>- What is the quantum yield of the FIAsH ligand bound to the peptide? This one will be harder to find. I suggest you do give it a try; mining literature is probably the single most useful skill in science. Clue: senior author of the paper you&rsquo;re looking for REALLY liked jellyfish. If you get stuck, I sent the right paper to Teja and David.</p>
+
+<p>&nbsp;</p>
+
+<p>Knowing all of the values above: if you roughly predict steady state fluorescence of GFP translation reaction vs FIAsH translation reaction (assuming the same starting concentration of all reagents and plasmid), what will be the ratio of the fluorescence from those two reactions?</p>
+
+<p>Please assume the world is perfect: all protein correctly folded and matured, all transcriptions result in full length product, all transcripts get translated equally, both promotors are equal strength (they actually are in your plasmids), FIAsH ligand is in excess (it actually is in your reaction), there&rsquo;s plenty of oxygen, transcription and translation building blocks are not limiting factors.</p>
+
+<p>Bonus question: why did I mention there has to be plenty of oxygen? which component of your reaction needs oxygen to glow?</p>
+
+<p>&nbsp;</p>
+
+        
+     
+      </div>
+
+      <div id="ExampleLab" class="tabcontent">
+        
+        <p><strong><u>3. Reaction setup</u></strong></p>
+
+<p>The reactions you&rsquo;re about to set up are very sensitive to RNAse contaminations.</p>
+
+<p>RNAses are like tanks of the protein world: they&rsquo;re extremely resistant to denaturation, hard to inhibit with small molecules, and preserve activity for a long time under unfavorable conditions. This is great for natural job of defense against pathogen that those enzymes perform. While we cannot hold it against them, RNAses are extremely inconvenient in cell-free work: RNAse contamination will chew up your mRNA transcript and wipe out translation experiments. Therefore, working in RNAse free regime is crucial in any in vitro transcription and translation experiments.</p>
+
+<p>RNAse free regime is harder to maintain than sterrile regime. RNAses are not removed by autoclaving. Any RNase free space is sterrile, but not every sterrile space is RNAse free.</p>
+
+<p>Before you start pipetting, consider the table you created in step 1: is any of the volumes you&#39;re required to pipet for single reaction perhaps too small to pipett reliably with the pipettes you have? What would be the solution to this problem? (tip: do you need to set up all reactions independently? or can you premix some reagents and make master stocks?)</p>
+
+<p>Thoroughly clean up your working space. Wipe the bench. Use fresh gloves when you start pipetting. Do not touch anything with your RNAse free gloved hands. If your ear is itching, use clean pipette tip to scractch. With your clean gloved hands, do not touch your face, hair, phone, water bottle, or anything else that is not clean lab equipment. If you need a break, put on fresh gloves when you come back. Sneeze <em>away </em>from the bench, please.</p>
+
+<p>When you are ready to set up reagents, mix everything in the following order: first, inorganic salts and plasmid, then energy and aa mix, then enzymes (RNAse inhibitor, T7 RNAP), at the end add ribosome mix. Pippet everything gently up and down few times to mix thoroughly, do not vortex.</p>
+
+<p>Start reading fluorescence as soon as you can, but you will not see a signal for at least half hour to an hour.</p>
+
+<p>Can you guess which sample will show fluorescence first: GFP or FLAsH?</p>
+
+<p>&nbsp;</p>
+
+        
+     
+        </div>
+      
+      <div id="DiscussionQuestions" class="tabcontent">
+       
+
+        <p><u><strong>4. Analysis</strong></u></p>
+
+        <p>Run your reaction as long as possible. We typically run it for 12h to overnight.</p>
+        
+        <p>Plot fluorescence vs time for GFP and for FLAsH. Plot error bars (SEM is fine) for both sample sets.</p>
+        
+        <p>How much difference do you see between each replicate? Are your separate GFP and separate FLAsH samples a biological or a technical replicate?</p>
+        
+        <p>Do you see reaction plateau at some point? Why is that? Why doesn&#39;t the fluorescence just keep going up and up for the entire time of the reaction?</p>
+        
+        
+        <p>&nbsp;</p>
+        
+        <hr />
+        <p><strong><span style="background-color:#FFFF00;">WRITING ASSINGMENT </span></strong></p>
+        
+        <p align="left"><u><strong>Design an useful synthetic minimal cell.</strong></u></p>
+        
+        <p align="left">Example solution to the SMC assignment, based on: Lentini, R. et al., 2014. Integrating artificial with natural cells to translate chemical messages that direct E. coli behaviour. Nature communications, 5(May), p.4012.</p>
+        
+        <p align="left"><strong>1. Pick a function.</strong></p>
+        
+        <p align="left"><u>1A What would your synthetic cell do? What is the input and what is the output.</u></p>
+        
+        <p align="left">Expand the sensing capacity of bacteria. Input: theophylline (inert to bacteria). Output of the SMC: IPTG. Output of the whole system: GFP produced in bacteria.</p>
+        
+        <p align="left">Theophyline Aptamer reference: Martini, L. &amp; Mansy, S.S., 2011. Cell-like systems with riboswitch controlled gene expression. Chemical Communications, 47(38), p.10734.</p>
+        
+        <p align="left"><u>1B Could this function be realized by cell free Tx/Tl alone, without encapsulation?</u></p>
+        
+        <p align="left">No. If the IPTG was not encapsulated, it would go into the bacteria without the need of theophylline-induced membrane channel synthesis, thus the synthetic cell actuator would not exist.</p>
+        
+        <p align="left"><u>1C Could this function be realized by genetically modified natural cell?</u></p>
+        
+        <p align="left">Yes, in this particular case: the theophylline aptamer could be incorporated into transformed gene. This lacks the generality though &ndash; it is easier to make SMC than modify bacteria, so in this system single bacteria reporter can be used to detect various small molecules.</p>
+        
+        <p align="left"><u>1D Describe the desired outcome of your synthetic cell operation.</u></p>
+        
+        <p align="left">In presence of SMC, bacteria sense theophylline.</p>
+        
+        <p align="left"><strong>2. Design all components that would need to be part of your synthetic cell.</strong></p>
+        
+        <p align="left"><u>2A What would be the membrane made of?</u></p>
+        
+        <p align="left">Phospholipids + cholesterol.</p>
+        
+        <p align="left"><u>2B What would you encapsulate inside? Enzymes, small molecules.</u></p>
+        
+        <p align="left">Cell free Tx/Tl system, IPTG, gene for membrane transporter under the control of theophylline aptamer.</p>
+        
+        <p align="left"><u>2C Which organism your tx/tl system will come from?</u> is bacterial OK, or do you need mammalian system for some reason? (hint: for example, if you want to use small molecule modulated promotors, like Tet-ON, you need mammalian).</p>
+        
+        <p align="left">Bacterial, because of the theophylline riboswitch used as SMC input.</p>
+        
+        <p align="left"><u>2D How will your synthetic cell communicate with the environment?</u> (hints: are substrates permeable? or do you need to express membrane channel?)</p>
+        
+        <p align="left">The membrane is permeable to the input molecule (theophylline), the output is IPTG that will cross the membrane via the membrane pore created after theophyline-initiated gene expression.</p>
+        
+        <p align="left"><strong>3. Experimental details</strong></p>
+        
+        <p align="left"><u>3A List all lipids and genes</u> (bonus: find the specific genes; for example, instead of just saying &ldquo;small molecule membrane channel&rdquo; pick actual gene)</p>
+        
+        <p align="left">Lipids: POPC, cholesterol</p>
+        
+        <p align="left">Enzymes: bacterial cell free tx/tl</p>
+        
+        <p align="left">Genes: a-hemolysin (aHL) to encapsulate in SMC,</p>
+        
+        <p align="left">Biological cells: E.coli transformed with GFP under T7 promoter and a lac operator</p>
+        
+        <p align="left"><u>3B How will you measure the function of your system?</u></p>
+        
+        <p align="left">Measure GFP output of the cells, via flow cytomertry. Alternatively, use enzymatic reporter, like luciferase, and measure bulk output of the enzyme.</p>
+        
+        <p align="left"><br />
+        <strong>Scheme</strong></p>
+        <p><img src="images/syntheticcellactuator.jpg"></p>
+        <p align="left">Artificial cells translate chemical signals for E. coli. (a) In the absence of artificial cells (circles), E. coli (oblong) cannot sense theophylline. (b) Artificial cells can be engineered to detect theophylline and in response release IPTG, a chemical signal that induces a response in E. coli.</p>
+        
+        
+
+
+      </div>
+      
+      <div id="UsefulResources" class="tabcontent">
+       
+
+
+      </div>
+
+
+
+      <div id="AutomationCode" class="tabcontent">
+        <h3>Opentrons Script</h3>
+        <p>To be added</p>
+      </div>
+    </div>
+  </article>
+  
+  <script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
+</body>
+</html>

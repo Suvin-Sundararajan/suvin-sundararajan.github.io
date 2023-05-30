@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTGAA Lab: Bio Production</title>
+  <link rel="stylesheet" href="github-markdown.css">
+  <style>
+    body {
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+    
+    .tab-container {
+      margin-top: 20px;
+    }
+    
+    .tab {
+      overflow: hidden;
+      background-color: #f1f1f1;
+      margin-bottom: 10px;
+    }
+    
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .tab button:hover {
+      background-color: #ddd;
+    }
+    
+    .tab button.active {
+      background-color: #ccc;
+    }
+    
+    .tabcontent {
+      display: none;
+      padding: 20px;
+      background-color: white;
+    }
+    .markdown-body .custom-paragraph {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .markdown-body .custom-paragraph span {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  
+    <article class="markdown-body">
+    <h2><a href="http://fab.cba.mit.edu/classes/S66.19/S66.19">HTGAA :</a> Bio Production</h2>
+    <p class="custom-paragraph">
+      <span><strong>Offered in <a href="http://fab.cba.mit.edu/classes/S66.19/S66.19">2019</a> , <i>Updated 05/30/2023</i></strong></span> <strong> Patrick Boyle (Ginkgo Bioworks) (MIT) </strong>
+      
+    </p>
+  
+    <hr>
+    <div class="tab-container">
+      <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Assignment')">Assignment</button>
+        <button class="tablinks" onclick="openTab(event, 'Prelab')">Pre Lab Prep</button>
+        <button class="tablinks" onclick="openTab(event, 'ExampleLab')">Example Lab</button>
+        <button class="tablinks" onclick="openTab(event, 'DiscussionQuestions')">Discussion Questions</button>
+        <button class="tablinks" onclick="openTab(event, 'UsefulResources')">Useful Resources</button>
+        <button class="tablinks" onclick="openTab(event, 'AutomationCode')">New! Automation Code</button>
+      </div>
+      
+      <div id="Assignment" class="tabcontent">
+        <h3>Assignment</h3>
+
+        <p>Read and annotate the sequence files for a DNA molecule. Isolate that DNA from cells, run an enzymatic reaction on it, and show the change you made. See <strong>Example Lab</strong> and <strong>Pro Challenge</strong> below.</p>
+        </div>
+        <div id="Prelab" class="tabcontent">
+          <h3>Hardware, Software, Wetware</h3>
+
+<table>
+    <thead>
+    <tr>
+        <th>Function</th>
+        <th>Wetware</th>
+    </tr>
+    </thead>
+    
+    <tbody>
+    <tr>
+        <td>Plasmid harvesting from <i>E. coli</i></td>
+        <td>ZymoPure <a href="https://www.zymoresearch.com/zymopure-plasmid-miniprep-kit">Plasmid Miniprep Kit</a>  </td>
+    </tr>
+    <tr>
+        <td><i>E. coli</i> with DNA plasmids</td>
+        <td>Addgene <a href="https://www.addgene.org/89439/">pPSU1</a> and <a href="https://www.addgene.org/89566/">pPSU2</a> bacterial stabs in vials</td>
+    </tr>
+    <tr>
+        <td>Restriction enzymes</td>
+        <td>NEB <a href="https://www.neb.com/products/r3140-psti-hf">PstI-HF</a> and <a href="https://www.neb.com/products/r3195-ecorv-hf">EcoRV-HF</a>  </td>
+    </tr>
+    <tr>
+        <td>Gel electrophoresis</td>
+        <td>TAE Buffer (Tris-acetate-EDTA), Agarose, Loading dye, <br>DNA stain, <a href="https://www.neb.com/products/n3231-100-bp-dna-ladder">100bp</a> and <a href="https://www.neb.com/products/n3232-1-kb-dna-ladder">1kbp</a> molecular-weight markers (DNA ladders)</td>
+    </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+    <tr>
+        <th>Function</th>
+        <th>Hardware</th>
+    </tr>
+    </thead>
+    
+    <tbody>
+    <tr>
+        <td>Temperature control for enzyme reactions</td>
+        <td>Thermocycler, water bath, incubator, or heat block</td>
+    </tr>
+    
+    <tr>
+        <td>Electrophoresis gel prep</td>
+        <td>Microwave and balance</td>
+    </tr>
+    
+    <tr>
+        <td>DNA size separation</td>
+        <td>Gel electrophoresis box and power supply</td>
+    </tr>
+    
+    <tr>
+        <td>DNA visualization</td>
+        <td>Blue-LED transilluminator</td>
+    </tr>
+    
+    <tr>
+        <td>DNA measurement</td>
+        <td>Spectrophotometer</td>
+    </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+    <tr>
+        <th>Function</th>
+        <th>Software</th>
+    </tr>
+    </thead>
+    
+    <tbody>
+    <tr>
+        <td>DNA sequence viewer/editor</td>
+        <td><a href="https://benchling.com/academic">Benchling</a>, <a href="http://www.snapgene.com/">Snapgene</a>, <a href="https://www.geneious.com/">Geneious</a>, <a href="http://biologylabs.utah.edu/jorgensen/wayned/ape/">ApE</a>, <a href="http://www.genbeans.org/index.html">GenBeans</a>, or text editor </td>
+    </tr>
+    <tr>
+        <td>Gel Analysis</td>
+        <td><a href="https://imagej.nih.gov/ij/">ImageJ</a> or <a href="https://fiji.sc/">FIJI</a>  </td>
+    </tr>
+    </tbody>
+</table>
+          </div>  
+      <div id="ExampleLab" class="tabcontent">
+      
+<h3>Example Lab</h3>
+
+<p><i> We will be working with Addgene plasmids <a href="https://www.addgene.org/89439/">pPSU1</a> and 
+<a href="https://www.addgene.org/89566/">pPSU2</a> deposited by the Tan lab at Penn State University. 
+In a 2017 <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5446395/"> paper</a>, Henrici et al demonstrated 
+how their plasmid designs can produce cheap <a href="https://en.wikipedia.org/wiki/Molecular-weight_size_marker"> DNA ladder</a>. 
+Note, DNA ladders are important references when measuring the size and topology of DNA products 
+after an enzymatic reaction. The enzymes we will use for our example lab are 
+<a href="https://en.wikipedia.org/wiki/Restriction_enzyme">restriction enzymes</a>, which cut DNA at sequence-specific 
+sites. Restriction enzymes are among the natural defense systems of bacteria to protect against viral bacteriophages. They were harnessed in the 1970's
+as a foundational technology for mapping and recombining DNA across all forms of life. Taking part in their characterization, 
+George published a 1978 <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC342165/">paper</a> that sequenced the plasmid <a href="https://en.wikipedia.org/wiki/PBR322">pBR322</a>
+to help determine the recognition sequence for the restriction enzyme <a href="https://www.neb.com/products/r0153-avaii">AvaII</a>.
+</i></p>
+
+<p><img src="images/GMC_AvaII.png"></p>
+
+<br>
+
+<p><i>Remember to always initial and label your tubes so you can identify their contents and distinguish them from your classmates' material.</i></p>
+
+<ol>
+    <li>
+        Download and review the genbank sequence files for <a href="https://www.addgene.org/browse/sequence/173229/">pPSU1</a> and <a href="https://www.addgene.org/browse/sequence/173512/">pPSU2</a>.
+        <ul>
+            <li>
+                What software are you using to read the sequence files?
+            </li>   
+            <li>
+                What are the distances between the PstI (CTGCAG) sites in each plasmid?
+            </li>    
+            <li>
+                What are the distances between the EcoRV (GATATC) sites in each plasmid?
+            </li>
+            <li>
+                Where do PstI and EcoRV cut within their recognition sequences?
+            </li>
+            <li>
+                What gene is encoded into the plasmids?
+            </li>
+            <li>
+                How many copies of the plasmid would you roughly expect in each cell?
+            </li>
+            <li>
+                How do the plasmids' replication relate to that of <a href="https://www.neb.com/products/n3033-pbr322-vector">pBR322</a> (<a href="https://www.neb.com/-/media/nebus/page-images/tools-and-resources/interactive-tools/dna-sequences-and-maps/text-documents/pbr322gbk.txt?la=en&hash=0EE7AB2198265E253200B5E2BC8B6F0B172610F3">genbank</a>)?
+            </li>
+        </ul>
+    </li>
+    <li>
+        Harvest pPSU1 and pPSU2 DNA from overnight <i>E. coli</i> culture using the ZymoPure Plasmid Miniprep Kit and elute with water. <i> The following protocol is copied from <a href="https://www.zymoresearch.com/media/amasty/amfile/attach/_D4208T_D4209_D4210_D4211_D4212_ZymoPURE_Plasmid_Miniprep_ver1.0.0.pdf">Zymo Research</a>.</i>
+        <ol>
+            <li>
+                From the freezer, collect pelleted overnight liquid cultures. They are labeled "pPSU1 &alpha;" and "pPSU2 &alpha;", as the growth strain is DH5alpha. 
+                Each pellet was prepared by spinning 1.5 mL of overnight culture at 8,000 rpm (6,800 x g) for 3 minutes.
+            </li>
+            <li>
+                To each pellet, add 250 µl of ZymoPURE™ P1 (Red) to the bacterial cell pellet and resuspend completely by vortexing or pipetting.
+            </li>
+            <li>
+                Add 250 µl of ZymoPURE™ P2 (Green) and immediately mix by gently inverting the tube 6-8 times. Do not vortex! Let sit at room temperature for 2-3 minutes.
+                <i>Cells are completely lysed when the solution appears clear, purple, and viscous</i>
+            </li>
+            <li>
+                Add 250 µl of ice cold ZymoPURE™ P3 (Yellow) and mix thoroughly by inversion. Do not vortex! Invert the tube an additional 3-4 times after the sample turns
+                completely yellow. <i>The sample will turn yellow when the neutralization is complete and a yellowish precipitate will form.</i>
+            </li>
+            <li>
+                Incubate the neutralized lysate on ice for 5 minutes.
+            </li>
+            <li>
+                Centrifuge the neutralized lysate for 5 minutes at 13,000 rpm (~17,900 x g).
+            </li>
+            <li>
+                Transfer 600 µl of supernatant from step 6 into a clean 1.5 ml microcentrifuge tube.
+                Be careful not to disturb the yellow pellet and avoid transferring any cellular debris to the new tube
+            </li>
+            <li>
+                Add 275 µl of ZymoPURE™ Binding Buffer to the cleared lysate from step 7 and
+                mix thoroughly by inverting the capped tube 8 times.
+            </li>
+            <li>
+                Place a Zymo-Spin™ II-P Column in a Collection Tube and transfer the entire mixture from step 8 into the Zymo-Spin™ II-P Column. 
+            </li>
+            <li>
+                Incubate the Zymo-Spin™ II-P/Collection Tube assembly at room temperature for 2 minutes and then centrifuge at 6,000 rpm (~5,900 x g) for 1 min. Discard the flow through.
+            </li>
+            <li>
+                Add 800 µl of ZymoPURE™ Wash 1 to the Zymo-Spin™ II-P Column and centrifuge at 6,000 rpm (~5,900 x g) for 1 min. Discard the flow through. 
+            </li>
+            <li>
+                Add 800 µl of ZymoPURE™ Wash 2 to the Zymo-Spin™ II-P Column and centrifuge at 6,000 rpm (~5,900 x g) for 1 min. Discard the flow through.
+            </li>
+            <li>
+                Add 200 µl of ZymoPURE™ Wash 2 to the Zymo-Spin™ II-P Column and centrifuge at 6,000 rpm (~5,900 x g) for 1 min. Discard the flow through.
+            </li>
+            <li>
+                Centrifuge the Zymo-Spin™ II-P Column at 13,000 rpm (~17,900 x g) for 1 minute in order to remove any residual wash buffer.
+            </li>
+            <li>
+                Transfer the Zymo-Spin™ II-P Column into a clean 1.5 ml tube and add 25 µl of DNase/RNase-Free water directly to the column matrix. 
+                Incubate at room temperature for 2 minutes, and then centrifuge at 13,000 rpm (~17,900 x g)for 1 minute in a microcentrifuge. 
+            </li>
+        </ol>
+    </li>
+    <li>
+        Measure the concentration of your pPSU1 and pPSU2 DNA preps using the Nanodrop spectrophotometer. 
+        <ol>
+            <li>
+                Clean stage with Kimwipe soaked with DI water.
+            </li>
+            <li>
+                Wipe stage with dry Kimwipe.
+            </li>
+            <li>
+                Add 2 uL DI water on stage and make blank measurement.
+            </li>
+            <li>
+                Wipe stage with dry Kimwipe.
+            </li>            
+            <li>
+                For each DNA sample, add 2 uL and measure and record the concentration (ng/uL). Wipe stage dry with Kimwipe between measurements.
+            </li>
+            <li>
+                To finish, clean stage with Kimwipe soaked with DI water and then wipe dry.
+            </li>
+        </ol>
+    </li>
+    <li>
+        In separate digestion reactions with either the NEB enzymes PstI-HF or EcoRV-HF, cut both pPSU1 and pPSU2 DNA. 
+        <ol>
+            <li>
+                If plasmid yields are greater than 500 ng/uL in concentration, prepare a dilution of your plasmid with water to a concentration of 100 ng/uL and total volume greater than 10 uL. 
+                If a plasmid yield is less than 2 ug in total yield (concentration x volume), either repeat the prep or use as much as you have available for the two digestion reactions and uncut controls. 
+            </li>
+            <li>
+                Prepare reaction with EcoRV-HF in a PCR tube (add enzyme last):
+                <table>
+                    <thead>
+                    <tr>
+                        <th>To Reaction</th>
+                        <th>Volume (50 uL Totral)</th>
+                    </tr>
+                    </thead>
+                    
+                    <tbody>
+                    <tr>
+                        <td>1 ug pPSU1 DNA </td>
+                        <td>X uL </td>
+                    </tr>
+                    <tr>
+                        <td>1 ug pPSU2 DNA </td>
+                        <td>Y uL </td>
+                    </tr>
+                    <tr>
+                        <td>DNase/RNase-Free Water</td>
+                        <td>43-X-Y uL</td>
+                    </tr>
+                    <tr>
+                        <td>NEB Buffer CutSmart </td>
+                        <td>5 uL </td>
+                    </tr>
+                    <tr>
+                        <td>NEB EcoRV-HF </td>
+                        <td>2 uL </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                Prepare reaction with PstI-HF in a PCR tube (add enzyme last):
+                <table>
+                    <thead>
+                    <tr>
+                        <th>To Reaction</th>
+                        <th>Volume (50 uL Totral)</th>
+                    </tr>
+                    </thead>
+                    
+                    <tbody>
+                    <tr>
+                        <td>1 ug pPSU1 DNA </td>
+                        <td>X uL </td>
+                    </tr>
+                    <tr>
+                        <td>1 ug pPSU2 DNA </td>
+                        <td>Y uL </td>
+                    </tr>
+                    <tr>
+                        <td>DNase/RNase-Free Water</td>
+                        <td>43-X-Y uL</td>
+                    </tr>
+                    <tr>
+                        <td>NEB Buffer CutSmart </td>
+                        <td>5 uL </td>
+                    </tr>
+                    <tr>
+                        <td>NEB PstI-HF </td>
+                        <td>2 uL </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                Incubate reactions at 37C for 15 minutes in thermocycler.
+            </li>
+        </ol>
+    </li>
+    <li>
+        Run the reactions alongside 100bp and 1kbp DNA ladder and uncut plasmid controls on a 1% agarose gel stained with SYBR-Safe at 120V for 1 hour. Scale down steps (i) and (ii) below by 1/3 if you are 
+        using the smaller gel box.
+        <ol>
+            <li>
+                Weigh 1.5 g agarose and add into 150 mL 1xTAE. Microwave until agarose completely dissolves. 
+            </li>
+            <li>
+                Add 15 uL of 10000xSYBR-Safe DNA stain. Use heat-resistant glove to gently swirl to mix (careful of burn hazard). Pour into rotated gel box tray (check beforehand that seal is watertight and do not fill past the bottom of the comb slots) and insert comb. 
+
+            </li>
+            <li>
+                Wait 45-60 minutes for gel to set. 
+            </li>
+            <li>
+                Remove comb and rotate tray so lanes are closest to cathode (black cable). Fill gel box with 1xTAE until gel is submerged.
+            </li>
+            <li>
+                Load the following into separate lanes.
+                <table>
+                    <thead>
+                    <tr>
+                        <th>To Lane</th>
+                        <th>Pre-Mix</th>
+                    </tr>
+                    </thead>
+                    
+                    <tbody>
+                    <tr>
+                        <td>NEB 100 bp Ref Ladder</td>
+                        <td>2 uL 100 bp DNA Ladder (500 ng/ul) + 48 uL water + 10 uL 6xGel Loading Dye</td>
+                    </tr>
+                    <tr>
+                        <td>NEB 1 kb Ref Ladder</td>
+                        <td>2 uL 1 kb DNA Ladder (500 ng/ul) + 48 uL water + 10 uL 6xGel Loading Dye</td>
+                    </tr>
+                    <tr>
+                        <td>Uncut pPSU1 Neg Control</td>
+                        <td>X uL for 1 ug pPSU1 DNA + 50-X uL water + 10 uL 6xGel Loading Dye</td>
+                    </tr>
+                    <tr>
+                        <td>Uncut pPSU2 Neg Control</td>
+                        <td>Y uL for 1 ug pPSU2 DNA + 50-Y uL water + 10 uL 6xGel Loading Dye</td>
+                    </tr>
+                    <tr>
+                        <td>EcoRV-HF Digest Reaction</td>
+                        <td>50 uL of Digest Reaction + 10 uL 6xGel Loading Dye</td>
+                    </tr>   
+                    <tr>
+                        <td>PstI-HF Digest Reaction</td>
+                        <td>50 uL of Digest Reaction + 10 uL 6xGel Loading Dye</td>
+                    </tr>   
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                Insert gel box lid, connect cables to power supply, and run at 120V for 1 hour.
+            </li>
+        </ol>
+    <li>
+        Image the gels with a transilluminator and analyze the banding patterns.
+        <ul>
+        <li> Save gel image for further analysis. </li>
+        <li>
+                Plot the distance each band traveled (relative to the largest fragment) versus the lengths of the DNA fragments. See FIJI gel analysis tutorial below for help.
+                If your gel image is difficult to analyze, you are welcome to ask a classmate for their image or perform your analysis on Fig4 from Henrici et al.
+            </li>
+            <li>
+                For the banding from the EcoRV-HF digestion, explain the relative brightnesses of the 500 bp and the 5 kb bands.
+            </li>
+            <li>
+                For the banding from the PstI-HF digestion, explain the relative brightnesses of the 500 bp and the 600 bp bands.
+            </li>
+        </ul>
+    </li>
+    </ol>
+</ol>
+
+        </div>
+      
+      <div id="DiscussionQuestions" class="tabcontent">
+        <h3>Pro Challenge</h3>
+
+        <p>Add a restriction site into the <i>E. coli</i> genome through lambda-red recombination.</p>
+        
+        <p>For this week, provide the oligo design that achieves your proposed genomic edit and describe what impact this change may have on the genetic code. In later weeks, you will carry out this recombination within the electroporator you build, and soon after measure your genome editing efficiency. Recall, George described <a href="https://blog.addgene.org/lambda-red-a-homologous-recombination-based-technique-for-genetic-engineering"> lambda red recombination</a> as being so precise that it can do what CRISPR can only wish to accomplish, for now.</p>
+        
+        
+      </div>
+      
+      <div id="UsefulResources" class="tabcontent">
+        <h3>Useful Resources</h3>
+        
+
+<ul>
+  <li>Molecular biology reference: <a href="https://www.addgene.org/mol-bio-reference/">Addgene</a></li>
+  <li>Demo videos for essential synbio skills: <a href="https://www.youtube.com/channel/UCoKnP5yh_Z4DtNffHYYEScw/videos">Synthetic Biology One</a></li>
+  <ul>
+      <li>
+          <a href="https://www.youtube.com/watch?v=1tlkF3I-S1Y">Parts of a plasmid</a>
+      </li>
+      <li>
+          <a href="https://www.youtube.com/watch?v=H9nSgxOoFlo">Collecting DNA from cells</a>
+      </li>
+      <li>
+          <a href="https://www.youtube.com/watch?v=ekmdt7b3vb0">Recombination with restriction enzymes</a>
+      </li>
+      <li>
+          <a href="https://www.youtube.com/watch?v=aI01BiLVOfs">Restriction enzyme digests</a>
+      </li>
+      <li>
+          <a href="https://www.youtube.com/watch?v=acq4eEDMbxk">DNA size separation</a>
+      </li>
+  </ul>
+  <li>Gel analysis tutorial: <a href="http://cellnetmcweb.bioquant.uni-heidelberg.de/image-analysis/ShortTutorials/Fiji_GelAnalyzer.pdf">FIJI GelAnalyzer</a></li>
+  <li>Genomic vs plasmid extraction: <a href="https://bitesizebio.com/1660/plasmid-v-genomic-dna-extractionthe-difference/">The Difference</a></li>
+  <li>Agarose vs agar-agar: <a href="https://cheapassscience.wordpress.com/2012/01/31/comparison-of-agarose-agar-agar-and-cleaned-agar-agar-for-gel-electrophoresis-of-dna/">CheapA** Science</a></li>
+  <li>Textbook entry on DNA cloning: <a href="https://www.ncbi.nlm.nih.gov/books/NBK21498/">Molecular Cell Biology. 4th edition</a></li>
+  <li>Textbook entry on DNA profiling: <a href="https://www.ncbi.nlm.nih.gov/books/NBK21505/">Molecular Cell Biology. 4th edition</a></li>
+  <li>Tutorials and tips:  <a href="http://bitesizebio.com/">Bitesize Bio</a></li>
+  <li>Protocol collection wiki: <a href="http://www.openwetware.org/wiki/Main_Page">Open Wetware</a></li>
+  <li>Protocol collection repo: <a href="https://www.protocols.io/researchers/new-england-biolabs">NEB on Protocols.io</a></li>
+</ul>
+      </div>
+      <div id="AutomationCode" class="tabcontent">
+        <h3>Opentrons Script</h3>
+        <p>To be added</p>
+      </div>
+    </div>
+  </article>
+  
+  <script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
+</body>
+</html>
