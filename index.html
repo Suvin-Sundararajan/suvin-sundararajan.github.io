@@ -51,7 +51,7 @@
 
 .lab-box img {
   max-width: 100%;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .lab-box h3 {
@@ -99,20 +99,8 @@
 }
 
 
-.collapsible {
-  position: relative;
-  background-color: #f2f2f2;
-  border: none;
-  color: #333; /* Adjust the color to match the header */
-  cursor: pointer;
-  padding: 10px;
-  width: 100%;
-  text-align: left;
-  outline: none;
-  font-size: 20px; /* Adjust the font size to match the header */
-  font-weight: bold; /* Adjust the font weight to match the header */
-  border-radius: 5px;
-}
+
+
 
 .view-protocol {
   position: absolute;
@@ -125,7 +113,7 @@
   color: #333;
   text-decoration: none;
   border-radius: 20px;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .view-protocol:hover {
@@ -180,9 +168,21 @@
   margin-left: 10px; /* Adjust the margin as needed */
 }
 
+.collapse-open-buttons {
+      text-align: left;
+      margin-bottom: 10px;
+    }
 
-
-
+    .collapse-open-buttons button {
+      margin-left: 10px;
+      padding: 8px 16px;
+      border-radius: 20px;
+      background-color: #c4bcbc;
+      color: #333;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+    }
 
 
   </style>
@@ -191,6 +191,11 @@
   <article class="markdown-body">
     <h2>HTGAA: Labs</h2>
     
+    <div class="collapse-open-buttons">
+      <button id="collapse-all-button">Collapse All</button>
+      <button id="open-all-button">Open All</button>
+    </div>
+
     <hr>
     <div class="table-container">
     <table>
@@ -206,22 +211,71 @@
          
            
           <td>
+            <p>Students focus on the folowing topics for the 2019 Year. Take a look at the various protocol, ranging from bioproduction to gut microbiomes</p>
+            
             <div class="lab-box">
-                <button class="collapsible">Biodesign (2/14)<span><a href="./labprotocol/biodesign.html" class="view-protocol">View Protocol</a>
+              <button class="collapsible">Course Overview (2/7), DONE<span><a href="./labprotocol/2019/overview.html" class="view-protocol"> Assignment</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>2/7, Updated 05/30/2023</i></strong></span>
+                  <strong> David Kong, George Church, Megan Palmer, Neil Gershenfeld </strong>
+                  <p>Ethics, Safety, Security, and Governance</p>
+                </p>
+                <!-- <img src="./labprotocol/images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                
+              </div>
+            </div>
+            <br>
+            
+            
+            
+            <div class="lab-box">
+                <button class="collapsible">Biodesign (2/14),DONE<span><a href="./labprotocol/biodesign.html" class="view-protocol">View Protocol</a>
                 </span></button>
                 <div class="content">
                   <p class="custom-paragraph">
                     <span><strong><i>2/14, Updated 05/30/2023</i></strong></span>
                     <strong> George Church (Harvard) </strong>
+                    <p>Read and annotate the sequence files for a DNA molecule. Isolate that DNA from cells, run an enzymatic reaction on it, and show the change you made.</p>
                   </p>
                   <!-- <img src="./labprotocol/images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
                   
                 </div>
               </div>
-                <p>Read and annotate the sequence files for a DNA molecule. Isolate that DNA from cells, run an enzymatic reaction on it, and show the change you made.</p>
+              <br>
         
+              <div class="lab-box">
+                <button class="collapsible">Hardware <span><a href="./labprotocol/2019/hardware.html" class="view-protocol">View Protocol</a>
+                </span></button>
+                <div class="content">
+                  <p class="custom-paragraph">
+                    <span><strong><i>2/21, Updated 05/30/2023</i></strong></span>
+                    <strong> David Kong (MIT), Kristin Ellis (Opentrons), and Julie Legault (Amino) and Justin Pahara (Amino) </strong>
+                    <p>Description Needed</p>
+                  </p>
+                  <!-- <img src="./labprotocol/images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                  <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+                </div>
+              </div>
+              <br>
 
-
+              <div class="lab-box">
+                <button class="collapsible">Next Generation Synthesis<span><a href="https://www.apple.com" class="view-protocol">View Protocol</a>
+                </span></button>
+                <div class="content">
+                  <p class="custom-paragraph">
+                    <span><strong><i>3/7, Updated 05/30/2023</i></strong></span>
+                    <strong> Patrick Boyle (Ginkgo Bioworks) (MIT) </strong>
+                    <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p>
+                  </p>
+                  
+                  <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway">
+                  <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+                </div>
+              </div>
+              <br>
+        
                 <div class="lab-box">
                     <button class="collapsible">Bioproduction (3/7)<span><a href="./labprotocol/bioproduction.html" class="view-protocol">View Protocol</a>
                     </span></button>
@@ -229,42 +283,31 @@
                       <p class="custom-paragraph">
                         <span><strong><i>3/7, Updated 05/30/2023</i></strong></span>
                         <strong> Patrick Boyle (Ginkgo Bioworks) (MIT) </strong>
+                        <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p>
                       </p>
                       <img src="./labprotocol/images/lycopene_pathway.jpg" alt="Lycopene Pathway">
                       <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
                     </div>
                   </div>
-                    <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p>
+                  <br>
             
     
     
-                    <div class="lab-box">
-                        <button class="collapsible">Next Generation Synthesis<span><a href="https://www.apple.com" class="view-protocol">View Protocol</a>
-                        </span></button>
-                        <div class="content">
-                          <p class="custom-paragraph">
-                            <span><strong><i>3/7, Updated 05/30/2023</i></strong></span>
-                            <strong> Patrick Boyle (Ginkgo Bioworks) (MIT) </strong>
-                          </p>
-                          <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway">
-                          <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
-                        </div>
-                      </div>
-                        <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p>
-                
+                   
                         <div class="lab-box">
                             <button class="collapsible">Protein Design (Virtual)<span><a href="https://www.apple.com" class="view-protocol">View Protocol</a>
                             </span></button>
                             <div class="content">
                               <p class="custom-paragraph">
-                                <span><strong><i>3/7, Updated 05/30/2023</i></strong></span>
+                                <span><strong><i>3/14, Updated 05/30/2023</i></strong></span>
                                 <strong> Patrick Boyle (Ginkgo Bioworks) (MIT) </strong>
+                                <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p>
                               </p>
                               <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway">
                               <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
                             </div>
                           </div>
-                            <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p>
+                          <br>
                     
                             <div class="lab-box">
                               <button class="collapsible">Engineering the Gut Microbiome (3/21)<span><a href="./labprotocol/microbiome.html" class="view-protocol">View Protocol</a>
@@ -273,12 +316,13 @@
                                 <p class="custom-paragraph">
                                   <span><strong><i>3/21, Updated 05/30/2023</i></strong></span>
                                   <strong> David Sun Kong (MIT), Vijay Yajnik (Takeda) </strong>
+                                  <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p>
                                 </p>
                                 <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
                                 <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
                               </div>
                             </div>
-                              <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p>
+                            <br>
                       
         
                               <div class="lab-box">
@@ -288,30 +332,85 @@
                                   <p class="custom-paragraph">
                                     <span><strong><i>4/4, Updated 05/30/2023</i></strong></span>
                                     <strong> Kate Adamala (University of Minnesota) </strong>
+                                    <p>In this exercise you will use some light pipetting skills, you will prove you can work in RNAse free environment, and you will do simple reaction setup calculations. You will also need to look up few simple biochemical values in the literature.</p>
                                   </p>
                                   <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
                                   <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
                                 </div>
                               </div>
-                                <p>In this exercise you will use some light pipetting skills, you will prove you can work in RNAse free environment, and you will do simple reaction setup calculations. You will also need to look up few simple biochemical values in the literature.</p>
+                               <br>
                         
                                 <div class="lab-box">
                                   <button class="collapsible">3d Printing and Biofabrication (4/11)<span><a href="./labprotocol/printing.html" class="view-protocol">View Protocol</a>
                                   </span></button>
                                   <div class="content">
                                     <p class="custom-paragraph">
-                                      <span><strong><i>4/4, Updated 05/30/2023</i></strong></span>
+                                      <span><strong><i>4/11, Updated 05/30/2023</i></strong></span>
                                       <strong> Nina Tandon (EpiBone) and Filippos Tourlomousis (MIT) </strong>
+                                      <p>Explore the basics of 3D bioprinting</p>
                                     </p>
                                     <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
                                     <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
                                   </div>
                                 </div>
-                                  <p>Explore the basics of 3D bioprinting</p>
+                                <br>
+
+                                <div class="lab-box">
+                                  <button class="collapsible">Principles of Measurement & Imaging<span><a href="./labprotocol/2019/measurement.html" class="view-protocol">View Protocol</a>
+                                  </span></button>
+                                  <div class="content">
+                                    <p class="custom-paragraph">
+                                      <span><strong><i>4/18, Updated 05/30/2023</i></strong></span>
+                                      <strong> Evan Daugharty (ReadCoor), Paul Reginato (MIT) </strong>
+                                      <p>To be added</p>
+                                    </p>
+                                    <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                                    <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+                                  </div>
+                                </div>
+                                <br>
+
+                                <div class="lab-box">
+                                  <button class="collapsible">Genome Engineering<span><a href="./labprotocol/2019/genome.html" class="view-protocol">View Protocol</a>
+                                  </span></button>
+                                  <div class="content">
+                                    <p class="custom-paragraph">
+                                      <span><strong><i>5/2, Updated 05/30/2023</i></strong></span>
+                                      <strong> John Glass (J. Craig Venter Institute), George Church (Harvard) </strong>
+                                      <p>To be added</p>
+                                    </p>
+                                    <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                                    <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+                                  </div>
+                                </div>
+                                <br>
+                                  
+                                  
                           
 
           </td>
 
+          </td>
+        </tr>
+        <tr>
+          <td>2020</td>
+          <td>
+
+            <div class="lab-box">
+              <button class="collapsible">Biodesign (2020)<span><a href="./labprotocol/2020/biodesign.html" class="view-protocol">View Protocol</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>2/11, Updated 05/30/2023</i></strong></span>
+                  <strong> George Church (Harvard) </strong>
+                  <p>Discusses genomic DNA, Restriction Digest, and DNA sequencing</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+             
           </td>
         </tr>
         <tr>
@@ -339,21 +438,38 @@
   </article>
 </body>
 <script>
-    // Get all the collapsible buttons
-const collapsibleButtons = document.querySelectorAll('.collapsible');
+  // JavaScript code for collapse/open all buttons
+  const collapseAllButton = document.getElementById('collapse-all-button');
+  const openAllButton = document.getElementById('open-all-button');
+  const collapsibleButtons = document.querySelectorAll('.collapsible');
 
-// Loop through each button and add a click event listener
-collapsibleButtons.forEach((button) => {
-  button.addEventListener('click', function () {
-    this.classList.toggle('active');
-    const content = this.nextElementSibling;
-    if (content.style.display === 'block') {
+  collapseAllButton.addEventListener('click', function () {
+    collapsibleButtons.forEach((button) => {
+      button.classList.remove('active');
+      const content = button.nextElementSibling;
       content.style.display = 'none';
-    } else {
-      content.style.display = 'block';
-    }
+    });
   });
-});
 
+  openAllButton.addEventListener('click', function () {
+    collapsibleButtons.forEach((button) => {
+      button.classList.add('active');
+      const content = button.nextElementSibling;
+      content.style.display = 'block';
+    });
+  });
+
+  // Existing JavaScript code for individual collapsible buttons
+  collapsibleButtons.forEach((button) => {
+    button.addEventListener('click', function () {
+      this.classList.toggle('active');
+      const content = this.nextElementSibling;
+      if (content.style.display === 'block') {
+        content.style.display = 'none';
+      } else {
+        content.style.display = 'block';
+      }
+    });
+  });
 </script>
 </html>

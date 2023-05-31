@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTGAA Lab: Bio Production</title>
+  <link rel="stylesheet" href="github-markdown.css">
+  <style>
+    body {
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+    
+    .tab-container {
+      margin-top: 20px;
+    }
+    
+    .tab {
+      overflow: hidden;
+      background-color: #f1f1f1;
+      margin-bottom: 10px;
+    }
+    
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .tab button:hover {
+      background-color: #ddd;
+    }
+    
+    .tab button.active {
+      background-color: #ccc;
+    }
+    
+    .tabcontent {
+      display: none;
+      padding: 20px;
+      background-color: white;
+    }
+    .markdown-body .custom-paragraph {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .markdown-body .custom-paragraph span {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  
+    <article class="markdown-body">
+    <h2><a href="http://fab.cba.mit.edu/classes/S66.19/S66.19">HTGAA :</a> Course Overview, Principles, Practices</h2>
+    <p class="custom-paragraph">
+      <span><strong>Offered in <a href="http://fab.cba.mit.edu/classes/S66.19/S66.19">2019</a> , <i>Updated 05/30/2023</i></strong></span> <strong> David Kong, George Church, Megan Palmer, Neil Gershenfeld</strong>
+      
+    </p>
+  
+    <hr>
+    <div class="tab-container">
+
+        <div class="tab">
+          <button class="tablinks" onclick="openTab(event, 'Assignment')">Overview</button>
+         <button class="tablinks" onclick="openTab(event, 'UsefulResources')">Useful Resources</button>
+          </div>
+        
+        <div id="Assignment" class="tabcontent">
+         
+          <h3>Principles & Practices Assignments</h3>
+
+          <p>Ethics, safety and security are essential considerations throughout (and beyond!) this class. We have therefore designed an assignment this week to give you a strong foundation, and then will ask you to reflect each week and in the design of your final project.</p>
+          
+          <p><a href="https://docs.google.com/presentation/d/1T9rC3Xh36xz1f0sx0ztTDGjiF8v1e1dj_NwQV5LxU3U/edit?usp=sharing">Upload Week1 Assignment Here</a> </p>
+          
+          <strong>Assignment:</strong> Design one “governance” action to ensure an “ethical” future for biotechnology
+          Some example actions for ensuring non-maleficence (e.g. preventing harm) include: require ethics and safety training to get access to labs and materials, pre-registering potentially dangerous experiments, product safety standards and testing, licensing all synthetic biologists, create a whistleblowing mechanism for bad behavior, developing a safety innovation prize, etc.)
+          <br><br><strong>In 3 slides present (to the best of your knowledge, with a little digging. Feel free to use analogies to other areas of science and engineering, e.g. 3D printing, drones etc ):</strong>
+          <ol>
+          
+          <li>
+          Goals & Rationale
+          <ul>
+          <li>
+          How does it work now (to the best of your knowledge) and how would you like that to change?
+          </li>
+          <li>
+          Why is this change desirable? (Try to suggest ethical the principle(s) you might you be applying e.g. non-malificence, justice)?
+          </li>
+          </ul>
+          </li>
+          
+          <li>
+          Design & Requirements
+          <ul>
+          <li>
+          What action(s) do you propose? What are alternatives? (see examples above)
+          </li>
+          <li>
+          What is needed to make it “work”? (who must opt in, fund, approve, implement, etc)
+          </li>
+          </ul>
+          </li>
+          
+          <li>
+          Assumptions & Risks of “Success”
+          <ul>
+          <li>
+          What are potential unintended consequences of your proposed actions?
+          </li>
+          <li>
+          What could you have wrong (incorrect assumptions, uncertainties)?
+          </li>
+          </ul>
+          
+          </ol>
+        
+        </div>
+  
+       
+      
+      
+      
+      <div id="UsefulResources" class="tabcontent">
+       
+        <h3>Useful Resources</h3>
+
+        <ul>
+        <li><a href="http://2016.igem.org/Safety">iGEM Safety Hub</a>: This page includes links to many useful resources including the WHO biosafety manual, the NIH guidelines and the CDC Biosafety in Microbial and Biomedical Laboratories Guide</li>
+        <li><a href="http://www.syntechbio.com/tools">SynTechBio Tools</a>: This page links to a first version of a biohacker manual to help you get your DIY-Bio Space up and running</li>
+        <li><a href="http://ask.diybio.org">DIYBio Ask a biosafety expert</a> This page includes a portal where you can get your biosafety questions answered by professionals</li>
+        <li><a href="http://bioethics.gov/synthetic-biology-report">US Presidential Commission on the Study of Bioethical Issues Report</a>: "New Directions: The Ethics of Synthetic Biology and Emerging Technologies” This report considers the ethics of biotechnology and other emerging technologies</li>
+        <li><a href="http://www.upmchealthsecurity.org/our-work/publications/synopsis-of-biological-safety-and-security-arrangements">Synopsis of Biological Safety and Security Arrangements</a> (Gronvall &amp; Rozo (2015): This report describes biosafety and biosecurity rules and regulations in many countries</li>
+        <li><a href="http://www.jcvi.org/cms/research/projects/syngen-options/overview/">Synthetic Genomics: Options for Governance</a> This is an older but useful report for thinking about a variety of options for the governance of biotechnology</li>
+        </ul>
+
+      </div>
+
+
+
+     
+    </div>
+  </article>
+  
+  <script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
+</body>
+</html>
