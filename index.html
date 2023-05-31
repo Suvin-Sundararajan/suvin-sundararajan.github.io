@@ -3,9 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTGAA: Labs</title>
+  <title>HTGAA : Protocol Repository</title>
   <link rel="stylesheet" href="github-markdown.css">
   <style>
+    
+     /* html {
+      background-image: url("banner.png");
+      background-size: top;
+      background-repeat: no-repeat;
+      background-position: center;
+    } */
+    /* body {
+      font-size: 75%; /* Reduce the font size by 25% */
+    
+    
+    body {
+      
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+    
+   
+    .banner {
+  background-image: url("banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 220px; /* Adjust the height as needed */
+  width: 100%;
+  text-align: center;
+}
+    
+    .banner h2 {
+      margin-bottom: 0px;
+    }
+    
     body {
       box-sizing: border-box;
       min-width: 200px;
@@ -130,7 +165,7 @@
   width: 100%;
   text-align: left;
   outline: none;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: bold;
   border-radius: 5px;
 }
@@ -176,7 +211,7 @@
     .collapse-open-buttons button {
       margin-left: 10px;
       padding: 8px 16px;
-      border-radius: 20px;
+      border-radius: 10px;
       background-color: #c4bcbc;
       color: #333;
       text-decoration: none;
@@ -189,18 +224,22 @@
 </head>
 <body>
   <article class="markdown-body">
-    <h2>HTGAA: Labs</h2>
+    <h2><a href="http://fab.cba.mit.edu/classes/S66.19/S66.19">How to Grow (Almost) Anything    </a>
+      <span style="font-size: 17px; margin-left: 5px;">    Protocol Repository</span></h2>
+    <div class="banner">
     
-    <div class="collapse-open-buttons">
-      <button id="collapse-all-button">Collapse All</button>
-      <button id="open-all-button">Open All</button>
-    </div>
-
+    
+   
+  </div>
+ 
     <hr>
+    
     <div class="table-container">
     <table>
       <thead>
         <tr>
+          <th>Year</th>
+          <th>Lab</th>
           <th>Year</th>
           <th>Lab</th>
         </tr>
@@ -214,11 +253,11 @@
             <p>Students focus on the folowing topics for the 2019 Year. Take a look at the various protocol, ranging from bioproduction to gut microbiomes</p>
             
             <div class="lab-box">
-              <button class="collapsible">Course Overview (2/7), DONE<span><a href="./labprotocol/2019/overview.html" class="view-protocol"> Assignment</a>
+              <button class="collapsible">Course Overview <span><a href="./labprotocol/2019/overview.html" class="view-protocol"> Assignment</a>
               </span></button>
               <div class="content">
                 <p class="custom-paragraph">
-                  <span><strong><i>2/7, Updated 05/30/2023</i></strong></span>
+                  <span><strong><i>2/7</i></strong></span>
                   <strong> David Kong, George Church, Megan Palmer, Neil Gershenfeld </strong>
                   <p>Ethics, Safety, Security, and Governance</p>
                 </p>
@@ -231,11 +270,11 @@
             
             
             <div class="lab-box">
-                <button class="collapsible">Biodesign (2/14),DONE<span><a href="./labprotocol/biodesign.html" class="view-protocol">View Protocol</a>
+                <button class="collapsible">Biodesign <span><a href="./labprotocol/biodesign.html" class="view-protocol">Protocol</a>
                 </span></button>
                 <div class="content">
                   <p class="custom-paragraph">
-                    <span><strong><i>2/14, Updated 05/30/2023</i></strong></span>
+                    <span><strong><i>2/14</i></strong></span>
                     <strong> George Church (Harvard) </strong>
                     <p>Read and annotate the sequence files for a DNA molecule. Isolate that DNA from cells, run an enzymatic reaction on it, and show the change you made.</p>
                   </p>
@@ -246,11 +285,11 @@
               <br>
         
               <div class="lab-box">
-                <button class="collapsible">Hardware <span><a href="./labprotocol/2019/hardware.html" class="view-protocol">View Protocol</a>
+                <button class="collapsible">Hardware <span><a href="./labprotocol/2019/hardware.html" class="view-protocol">Protocol</a>
                 </span></button>
                 <div class="content">
                   <p class="custom-paragraph">
-                    <span><strong><i>2/21, Updated 05/30/2023</i></strong></span>
+                    <span><strong><i>2/21</i></strong></span>
                     <strong> David Kong (MIT), Kristin Ellis (Opentrons), and Julie Legault (Amino) and Justin Pahara (Amino) </strong>
                     <p>Description Needed</p>
                   </p>
@@ -261,11 +300,11 @@
               <br>
 
               <div class="lab-box">
-                <button class="collapsible">Next Generation Synthesis<span><a href="https://www.apple.com" class="view-protocol">View Protocol</a>
+                <button class="collapsible">Next Generation Synthesis<span><a href="https://www.apple.com" class="view-protocol">Protocol</a>
                 </span></button>
                 <div class="content">
                   <p class="custom-paragraph">
-                    <span><strong><i>3/7, Updated 05/30/2023</i></strong></span>
+                    <span><strong><i>3/7</i></strong></span>
                     <strong> Patrick Boyle (Ginkgo Bioworks) (MIT) </strong>
                     <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p>
                   </p>
@@ -277,11 +316,11 @@
               <br>
         
                 <div class="lab-box">
-                    <button class="collapsible">Bioproduction (3/7)<span><a href="./labprotocol/bioproduction.html" class="view-protocol">View Protocol</a>
+                    <button class="collapsible">Bioproduction <span><a href="./labprotocol/bioproduction.html" class="view-protocol">Protocol</a>
                     </span></button>
                     <div class="content">
                       <p class="custom-paragraph">
-                        <span><strong><i>3/7, Updated 05/30/2023</i></strong></span>
+                        <span><strong><i>3/7</i></strong></span>
                         <strong> Patrick Boyle (Ginkgo Bioworks) (MIT) </strong>
                         <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p>
                       </p>
@@ -295,11 +334,11 @@
     
                    
                         <div class="lab-box">
-                            <button class="collapsible">Protein Design (Virtual)<span><a href="https://www.apple.com" class="view-protocol">View Protocol</a>
+                            <button class="collapsible">Protein Design (Virtual)<span><a href="https://www.apple.com" class="view-protocol">Protocol</a>
                             </span></button>
                             <div class="content">
                               <p class="custom-paragraph">
-                                <span><strong><i>3/14, Updated 05/30/2023</i></strong></span>
+                                <span><strong><i>3/14</i></strong></span>
                                 <strong> Patrick Boyle (Ginkgo Bioworks) (MIT) </strong>
                                 <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p>
                               </p>
@@ -310,11 +349,11 @@
                           <br>
                     
                             <div class="lab-box">
-                              <button class="collapsible">Engineering the Gut Microbiome (3/21)<span><a href="./labprotocol/microbiome.html" class="view-protocol">View Protocol</a>
+                              <button class="collapsible">Engineering the Gut Microbiome <span><a href="./labprotocol/microbiome.html" class="view-protocol">Protocol</a>
                               </span></button>
                               <div class="content">
                                 <p class="custom-paragraph">
-                                  <span><strong><i>3/21, Updated 05/30/2023</i></strong></span>
+                                  <span><strong><i>3/21</i></strong></span>
                                   <strong> David Sun Kong (MIT), Vijay Yajnik (Takeda) </strong>
                                   <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p>
                                 </p>
@@ -326,11 +365,11 @@
                       
         
                               <div class="lab-box">
-                                <button class="collapsible">Synthetic Minimal Cells (4/4)<span><a href="./labprotocol/synthetic.html" class="view-protocol">View Protocol</a>
+                                <button class="collapsible">Synthetic Minimal Cells <span><a href="./labprotocol/synthetic.html" class="view-protocol">Protocol</a>
                                 </span></button>
                                 <div class="content">
                                   <p class="custom-paragraph">
-                                    <span><strong><i>4/4, Updated 05/30/2023</i></strong></span>
+                                    <span><strong><i>4/4</i></strong></span>
                                     <strong> Kate Adamala (University of Minnesota) </strong>
                                     <p>In this exercise you will use some light pipetting skills, you will prove you can work in RNAse free environment, and you will do simple reaction setup calculations. You will also need to look up few simple biochemical values in the literature.</p>
                                   </p>
@@ -341,11 +380,11 @@
                                <br>
                         
                                 <div class="lab-box">
-                                  <button class="collapsible">3d Printing and Biofabrication (4/11)<span><a href="./labprotocol/printing.html" class="view-protocol">View Protocol</a>
+                                  <button class="collapsible">3d Printing and Biofabrication <span><a href="./labprotocol/printing.html" class="view-protocol">Protocol</a>
                                   </span></button>
                                   <div class="content">
                                     <p class="custom-paragraph">
-                                      <span><strong><i>4/11, Updated 05/30/2023</i></strong></span>
+                                      <span><strong><i>4/11</i></strong></span>
                                       <strong> Nina Tandon (EpiBone) and Filippos Tourlomousis (MIT) </strong>
                                       <p>Explore the basics of 3D bioprinting</p>
                                     </p>
@@ -356,11 +395,11 @@
                                 <br>
 
                                 <div class="lab-box">
-                                  <button class="collapsible">Principles of Measurement & Imaging<span><a href="./labprotocol/2019/measurement.html" class="view-protocol">View Protocol</a>
+                                  <button class="collapsible">Measurement & Imaging<span><a href="./labprotocol/2019/measurement.html" class="view-protocol">Protocol</a>
                                   </span></button>
                                   <div class="content">
                                     <p class="custom-paragraph">
-                                      <span><strong><i>4/18, Updated 05/30/2023</i></strong></span>
+                                      <span><strong><i>4/18</i></strong></span>
                                       <strong> Evan Daugharty (ReadCoor), Paul Reginato (MIT) </strong>
                                       <p>To be added</p>
                                     </p>
@@ -371,11 +410,11 @@
                                 <br>
 
                                 <div class="lab-box">
-                                  <button class="collapsible">Genome Engineering<span><a href="./labprotocol/2019/genome.html" class="view-protocol">View Protocol</a>
+                                  <button class="collapsible">Genome Engineering<span><a href="./labprotocol/2019/genome.html" class="view-protocol">Protocol</a>
                                   </span></button>
                                   <div class="content">
                                     <p class="custom-paragraph">
-                                      <span><strong><i>5/2, Updated 05/30/2023</i></strong></span>
+                                      <span><strong><i>5/2</i></strong></span>
                                       <strong> John Glass (J. Craig Venter Institute), George Church (Harvard) </strong>
                                       <p>To be added</p>
                                     </p>
@@ -389,19 +428,50 @@
                           
 
           </td>
-
-          </td>
-        </tr>
-        <tr>
           <td>2020</td>
           <td>
+            <p>Students focus on the folowing topics for the 2019 Year. Take a look at the various protocol, ranging from bioproduction to gut microbiomes</p>
 
             <div class="lab-box">
-              <button class="collapsible">Biodesign (2020)<span><a href="./labprotocol/2020/biodesign.html" class="view-protocol">View Protocol</a>
+              <button class="collapsible">2020 Course Overview <span><a href="./labprotocol/2020/overview.html" class="view-protocol">Assignment</a>
               </span></button>
               <div class="content">
                 <p class="custom-paragraph">
-                  <span><strong><i>2/11, Updated 05/30/2023</i></strong></span>
+                  <span><strong><i>2/4</i></strong></span>
+                  <strong> George Church (Harvard) </strong>
+                  <p>Ethics, Safety, Security, and Governance</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+            <br>
+
+
+            <div class="lab-box">
+              <button class="collapsible">Biodesign (II)<span><a href="./labprotocol/2020/biodesign.html" class="view-protocol">Protocol</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>2/11</i></strong></span>
+                  <strong> David Kong (MIT), George Church (Harvard), Megan Palmer (Stanford), Neil Gershenfeld </strong>
+                  <p>Discusses genomic DNA, Restriction Digest, and DNA sequencing</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+            <br>
+
+
+            <div class="lab-box">
+              <button class="collapsible">Biodesign (II)<span><a href="./labprotocol/2020/biodesign.html" class="view-protocol">Protocol</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>2/11</i></strong></span>
                   <strong> George Church (Harvard) </strong>
                   <p>Discusses genomic DNA, Restriction Digest, and DNA sequencing</p>
                 </p>
@@ -410,31 +480,754 @@
                 <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
               </div>
             </div>
-             
+            <br>
+
+            <div class="lab-box">
+              <button class="collapsible">Protein Design (II)<span><a href="./labprotocol/2020/protein.html" class="view-protocol">Protocol</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>2/25</i></strong></span>
+                  <strong> Shuguang Zhang (MIT), Thras Karydis (DeepCure) </strong>
+                  <p>Insert Description</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+            <br>
+            
+            <div class="lab-box">
+              <button class="collapsible">Next Generation Synthesis (II)<span><a href="./labprotocol/2020/nextgen.html" class="view-protocol">Protocol</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>3/3</i></strong></span>
+                  <strong> 
+                   Joe Jacobson (MIT) and Noah Jakimo (Arbor/MIT) </strong>
+                  <p>Insert Description</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+            <br>
+
+
+            <div class="lab-box">
+              <button class="collapsible">Hardware and Cell-Free Systems<span><a href="./labprotocol/2020/hardware.html" class="view-protocol">Protocol</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>3/10</i></strong></span>
+                  <strong> Shuguang Zhang (MIT), Thras Karydis (DeepCure) </strong>
+                  <p>Insert Description</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+            <br>
+
+            <div class="lab-box">
+              <button class="collapsible">Circuits and Sensors<span><a href="./labprotocol/2020/circuits.html" class="view-protocol">Protocol</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>3/17</i></strong></span>
+                  <strong> Jim Collins (MIT) </strong>
+                  <p>Insert Description</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+            <br>
+
+
+            <div class="lab-box">
+              <button class="collapsible">Genome Engineering (II)<span><a href="./labprotocol/2020/genome.html" class="view-protocol">Protocol</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>3/31</i></strong></span>
+                  <strong> John Glass (J. Craig Venter Institute), George Church (Harvard) </strong>
+                  <p>Insert Description</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+            <br>
+
+
+            <div class="lab-box">
+              <button class="collapsible">Gene Drives and Ethics<span><a href="./labprotocol/2020/genedrives.html" class="view-protocol">Protocol</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>4/7</i></strong></span>
+                  <strong>  Kevin Esvelt (MIT)</strong>
+                  <p>Insert Description</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+            <br>
+
+
+            <div class="lab-box">
+              <button class="collapsible">3D Printing/Biofabrication (II)<span><a href="./labprotocol/2020/genedrives.html" class="view-protocol">Protocol</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>4/14</i></strong></span>
+                  <strong> Nina Tandon (EpiBone)</strong>
+                  <p>Insert Description</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+            <br>
+
+
+            <div class="lab-box">
+              <button class="collapsible">Bioproduction (II)<span><a href="./labprotocol/2020/genedrives.html" class="view-protocol">Protocol</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>4/21</i></strong></span>
+                  <strong>  Kevin Esvelt (MIT)</strong>
+                  <p>Insert Description</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+            <br>
+
+            <div class="lab-box">
+              <button class="collapsible">Engineering the Gut Microbiome (II)<span><a href="./labprotocol/2020/genedrives.html" class="view-protocol">Protocol</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>4/28</i></strong></span>
+                  <strong>  David Kong (MIT)</strong>
+                  <p>Insert Description</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+            <br>
+
+            <div class="lab-box">
+              <button class="collapsible">Measurement and Imaging (II)<span><a href="./labprotocol/2020/genedrives.html" class="view-protocol">Protocol</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>5/5</i></strong></span>
+                  <strong>  Evan Daugharty (ReadCoor)</strong>
+                  <p>Insert Description</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+            <br>
+
+
+
+          </td>
           </td>
         </tr>
         <tr>
+         
+        </tr>
+        <tr>
+          
           <td>2021</td>
           <td>
-            <!-- Lab content for 2021 -->
+            <!-- ------------------------------------------------------- 2021 --> 
+            <div class="lab-box">
+              <button class="collapsible">Class 101s<span><a href="./labprotocol/2020/overview.html" class="view-protocol">Assignment</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>2/12</i></strong></span>
+                  
+                  <p>Foundational Content</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+            <br>
+
+
+            <div class="lab-box">
+              <button class="collapsible">2021 Course Overview <span><a href="./labprotocol/2020/overview.html" class="view-protocol">Assignment</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>2/16</i></strong></span>
+                  <strong> David Kong (MIT), Joe Jacobson (MIT), George Church (Harvard), Megan Palmer (Stanford) </strong>
+                  <p>Ethics, Safety, Security, and Governance</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+            <br>
+
+
+            <div class="lab-box">
+              <button class="collapsible">Designing SynBiology Systems<span><a href="./labprotocol/2020/biodesign.html" class="view-protocol">Protocol</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>2/11</i></strong></span>
+                  <strong> George Church (Harvard)</strong>
+                  <p>Discusses genomic DNA, Restriction Digest, and DNA sequencing</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+            <br>
+
+
+
+            <div class="lab-box">
+              <button class="collapsible">Protein Design (III)<span><a href="./labprotocol/2020/protein.html" class="view-protocol">Protocol</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>3/2</i></strong></span>
+                  <strong> Shuguang Zhang (MIT), Thras Karydis (DeepCure) </strong>
+                  <p>Insert Description</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+            <br>
+            
+            <div class="lab-box">
+              <button class="collapsible">Lab Automation: Opentrons<span><a href="./labprotocol/2021/nextgen.html" class="view-protocol">Protocol</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>3/10</i></strong></span>
+                  <strong> 
+                   Eyal Perry </strong>
+                  <p>Insert Description</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+            <br>
+
+            
+
+            <div class="lab-box">
+              <button class="collapsible">Next Generation Synthesis (III)<span><a href="./labprotocol/2020/nextgen.html" class="view-protocol">Protocol</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>3/16</i></strong></span>
+                  <strong> 
+                   Joe Jacobson (MIT) and Emily LeProust (Twist) </strong>
+                  <p>Insert Description</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+            <br>
+
+            <div class="lab-box">
+              <button class="collapsible">Measurement and Imaging (III)<span><a href="./labprotocol/2020/genedrives.html" class="view-protocol">Protocol</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>3/30</i></strong></span>
+                  <strong>  Evan Daugharty (ReadCoor)</strong>
+                  <p>Insert Description</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+            <br>
+
+            <div class="lab-box">
+              <button class="collapsible">Circuits, Cell Free Systems  <span><a href="./labprotocol/2020/circuits.html" class="view-protocol">Protocol</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>4/6</i></strong></span>
+                  <strong> Kate Adamala (U Minnesota), Jim Collins (MIT), Ally Huang (Biobots) </strong>
+                  <p>Insert Description</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+            <br>
+
+
+            <div class="lab-box">
+              <button class="collapsible">Bioproduction (III)<span><a href="./labprotocol/2021/genedrives.html" class="view-protocol">Protocol</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>4/13</i></strong></span>
+                  <strong>  Patrick Boyle (Ginkgo Bioworks)</strong>
+                  <p>Insert Description</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+            <br>
+
+
+        
+           
+
+
+
+            <div class="lab-box">
+              <button class="collapsible">Engineering the Gut Microbiome (III)<span><a href="./labprotocol/2020/genedrives.html" class="view-protocol">Protocol</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>4/27</i></strong></span>
+                  <strong>  David Kong (MIT), Mariana Matus (Biobots)</strong>
+                  <p>Insert Description</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+            <br>
+
+
+            <div class="lab-box">
+              <button class="collapsible">3D Printing and Biofabrication (III)<span><a href="./labprotocol/2020/genedrives.html" class="view-protocol">Protocol</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>5/4</i></strong></span>
+                  <strong> Nina Tandon (EpiBone)</strong>
+                  <p>Insert Description</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+            <br>
+
+
+            
+            <div class="lab-box">
+              <button class="collapsible">Genome Engineering (III)<span><a href="./labprotocol/2020/genome.html" class="view-protocol">Protocol</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>3/31</i></strong></span>
+                  <strong> John Glass (J. Craig Venter Institute), George Church (Harvard) </strong>
+                  <p>Insert Description</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+            <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           </td>
-        </tr>
-        <tr>
           <td>2022</td>
+
           <td>
+                   
+            <div class="lab-box">
+              <button class="collapsible">Bio Bootcamp  <span><a href="./labprotocol/2020/genome.html" class="view-protocol">Protocol</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>1/27</i></strong></span>
+                  <strong> Jessica, Anush </strong>
+                  <p>Insert Description</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+            <br>
+
+            <div class="lab-box">
+              <button class="collapsible">Genotyping - Gels, PCR, Sequencing <span><a href="./labprotocol/2020/genome.html" class="view-protocol">Protocol</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>2/9</i></strong></span>
+                  <strong> Jessica, Anush </strong>
+                  <p>Insert Description</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+            <br>
+
+            <div class="lab-box">
+              <button class="collapsible">Bioproduction (IV) <span><a href="./labprotocol/2020/genome.html" class="view-protocol">Protocol</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>2/16</i></strong></span>
+                  <strong> Laura, Pat, Sebastian, Eyal </strong>
+                  <p>Insert Description</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+            <br>
+
+            <div class="lab-box">
+              <button class="collapsible">Lab Automation for Education (II) <span><a href="./labprotocol/2020/genome.html" class="view-protocol">Protocol</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>2/23</i></strong></span>
+                  <strong> Alex, Eyal, Laura, Andres </strong>
+                  <p>Insert Description</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+            <br>
+
+            <div class="lab-box">
+              <button class="collapsible">Cloning - Part A: Primer Design <span><a href="./labprotocol/2020/genome.html" class="view-protocol">Protocol</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>3/2</i></strong></span>
+                  <strong> Eyal, Laura</strong>
+                  <p>Insert Description</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+            <br>
+
+
+            <div class="lab-box">
+              <button class="collapsible">Cloning - Part B: PCR <span><a href="./labprotocol/2020/genome.html" class="view-protocol">Protocol</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>3/9</i></strong></span>
+                  <strong> Eyal, Laura</strong>
+                  <p>Insert Description</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+            <br>
+
+
+            <div class="lab-box">
+              <button class="collapsible">Cloning - Part C: Transformations <span><a href="./labprotocol/2020/genome.html" class="view-protocol">Protocol</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>3/16</i></strong></span>
+                  <strong> Eyal, Laura</strong>
+                  <p>Insert Description</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+            <br>
+
+
+            <div class="lab-box">
+              <button class="collapsible">Bacterial Sensors and Genetic Circuits<span><a href="./labprotocol/2020/genome.html" class="view-protocol">Protocol</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>3/30</i></strong></span>
+                  <strong> Manu, Laura</strong>
+                  <p>Insert Description</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+            <br>
+
+            <div class="lab-box">
+              <button class="collapsible">Festival of Growing (2022 Exclusive) <span><a href="./labprotocol/2020/genome.html" class="view-protocol">View Exhibit</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>4/6</i></strong></span>
+           
+                  <p>Insert Description</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+            <br>
+
+
+
+
             <!-- Lab content for 2022 -->
           </td>
         </tr>
         <tr>
+         
+        </tr>
+        <tr>
           <td>2023</td>
           <td>
+
+            <div class="lab-box">
+              <button class="collapsible">Pipetting <span><a href="./labprotocol/2020/genome.html" class="view-protocol">View</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>2/7</i></strong></span>
+                    <strong> Laura, Eyal, Suvin, Amelia, Matt</strong>
+                  <p>Insert Description</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+            <br>
+
+            <div class="lab-box">
+              <button class="collapsible">Gel Art <span><a href="./labprotocol/2020/genome.html" class="view-protocol">View</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>2/14</i></strong></span>
+                    <strong> Laura, Eyal, Suvin, Amelia, Matt</strong>
+                  <p>Insert Description</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+            <br>
+
+
+            <div class="lab-box">
+              <button class="collapsible">Opentrons Flourescent Art <span><a href="./labprotocol/2020/genome.html" class="view-protocol">View</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>2/21</i></strong></span>
+                    <strong> Laura, Suvin</strong>
+                  <p>Insert Description</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+            <br>
+
+          
+
+            <div class="lab-box">
+              <button class="collapsible">Bioproduction (V) <span><a href="./labprotocol/2020/genome.html" class="view-protocol">View</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>3/7</i></strong></span>
+                    <strong> Insert Description</strong>
+                  <p>Insert Description</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+            <br>
+
+            <div class="lab-box">
+              <button class="collapsible">Measurement and Imaging<span><a href="./labprotocol/2020/genome.html" class="view-protocol">View</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>3/14</i></strong></span>
+                    <strong> Insert Description</strong>
+                  <p>Insert Description</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+            <br>
+
+            <div class="lab-box">
+              <button class="collapsible">Gibson Transformation<span><a href="./labprotocol/2020/genome.html" class="view-protocol">View</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>3/21</i></strong></span>
+                    <strong> Insert Description</strong>
+                  <p>Insert Description</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+            <br>
+
+
+            <div class="lab-box">
+              <button class="collapsible">Cell Free<span><a href="./labprotocol/2020/genome.html" class="view-protocol">View</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>4/4</i></strong></span>
+                    <strong> Insert Description</strong>
+                  <p>Insert Description</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+            <br>
+
+
+            <div class="lab-box">
+              <button class="collapsible">CRISPR Part I<span><a href="./labprotocol/2020/genome.html" class="view-protocol">View</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>4/11</i></strong></span>
+                    <strong> Laura, Matt</strong>
+                  <p>Insert Description</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+            <br>
+
+            <div class="lab-box">
+              <button class="collapsible">CRISPR Part II<span><a href="./labprotocol/2020/genome.html" class="view-protocol">View</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>4/18</i></strong></span>
+                    <strong> Laura, Matt</strong>
+                  <p>Insert Description</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+            <br>
+
+            <div class="lab-box">
+              <button class="collapsible">Microfluidics<span><a href="./labprotocol/2020/genome.html" class="view-protocol">View</a>
+              </span></button>
+              <div class="content">
+                <p class="custom-paragraph">
+                  <span><strong><i>4/25</i></strong></span>
+                    <strong> Suvin</strong>
+                  <p>Insert Description</p>
+                </p>
+                
+                <!-- <img src="./images/lycopene_pathway.jpg" alt="Lycopene Pathway"> -->
+                <!-- <p>Test the impact of genes and culture conditions (i.e., temperature and growth media composition) on the production of lycopene in <i>E. coli</i>.</p> -->
+              </div>
+            </div>
+            <br>
+
+
+
+
+
             <!-- Lab content for 2023 -->
           </td>
         </tr>
       </tbody>
     </table>
 </div>
-  
+<div class="collapse-open-buttons">
+  <button id="collapse-all-button">Collapse All</button>
+  <button id="open-all-button">Open All</button>
+</div>
   </article>
 </body>
 <script>
